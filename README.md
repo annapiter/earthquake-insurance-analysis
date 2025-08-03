@@ -12,7 +12,7 @@ This project analyzes earthquake activity and insurance-relevant risk factors ac
 - Where do high-magnitude earthquakes most frequently occur?
 - How does seismic risk align with regional demographics or housing data?
 - Which regions may warrant premium adjustments or expanded coverage?
-- Can we build a model to predict earthquake risk or expected claims?
+- Is it possible to develop a predictive model for estimating earthquake damage risk or potential insurance claims?
 
 ---
 
@@ -48,7 +48,7 @@ earthquake_insurance_project/
 
 Early analysis used a simplified GeoJSON file that **missed historic events** (e.g. the 1906 San Francisco earthquake). This was caused by incomplete polygon boundaries.
 
-✅ To fix this, the project was upgraded to **official 2023 TIGER/Line shapefiles** from the U.S. Census. These high-resolution county geometries enabled accurate spatial joins and reliable historic analysis.
+To fix this, the project was upgraded to **official 2023 TIGER/Line shapefiles** from the U.S. Census. These high-resolution county geometries enabled accurate spatial joins and reliable historic analysis.
 
 ---
 
