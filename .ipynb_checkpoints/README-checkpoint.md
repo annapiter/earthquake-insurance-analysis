@@ -1,88 +1,113 @@
-# Earthquake Insurance Risk Analysis in California
+# 🌍 Earthquake Insurance Risk Analysis in California
 
 ## 📌 Project Objective
 
-To analyze earthquake activity, demographics, and insurance-related factors in California at the county level. The goal is to identify high-risk regions and provide actionable insights that could support insurance pricing models and risk assessment strategies — particularly for companies like AAA Insurance.
+This project analyzes earthquake activity and insurance-relevant risk factors across California counties. The primary goal is to identify high-risk regions and provide actionable insights to support insurance pricing models, underwriting, and risk assessment — with particular relevance for companies like **AAA Insurance**.
+
+---
 
 ## 🔍 Key Questions
 
 - Which counties in California are most vulnerable to earthquakes?
-- How does seismic risk relate to demographics like income, housing type, or population density?
-- Where might insurers consider adjusting premiums or expanding earthquake insurance offerings?
-- Can we build a predictive model to estimate potential risk or claims?
+- Where do high-magnitude earthquakes most frequently occur?
+- How does seismic risk align with regional demographics or housing data?
+- Which regions may warrant premium adjustments or expanded coverage?
+- Can we build a model to predict earthquake risk or expected claims?
+
+---
 
 <details>
 <summary>🧰 <strong>Tools & Technologies</strong> (click to expand)</summary>
 
 - **Python**: pandas, geopandas, matplotlib, seaborn, folium, scikit-learn  
 - **Jupyter Notebooks**  
-- **Power BI / Tableau** (for future dashboarding)  
-- (Optional) USGS API, Census API, or scraped CSVs  
+- **Power BI / Tableau** (for future dashboards)  
+- **USGS Earthquake API** and **U.S. Census TIGER/Line Shapefiles**
 
 </details>
+
+---
 
 <details>
 <summary>📂 <strong>Project Structure</strong> (click to expand)</summary>
-
-earthquake_insurance_project/  
-├── data/ # All raw input files (GeoJSON, CSVs, API exports)  
-├── notebooks/ # Jupyter notebooks organized by stage  
-├── output/ # Processed data, charts, maps, model outputs  
-├── scripts/ # Python scripts for cleaning, modeling (optional)  
-├── dashboards/ # Future visual dashboards (Power BI / Tableau)  
-├── README.md # Project overview and structure  
-└── requirements.txt # List of required Python packages  
+    
+earthquake_insurance_project/
+├── data/ # Raw input files (shapefiles, CSVs, exports)
+├── notebooks/ # Jupyter notebooks organized by stage
+├── output/ # Processed data, maps, charts, summaries
+├── scripts/ # Python scripts (optional)
+├── dashboards/ # Power BI / Tableau dashboards (future)
+├── README.md # Project overview and insights
+└── requirements.txt
 
 </details>
 
+---
+
 ## 🗺️ Geospatial Accuracy Note
 
-Initial versions of the project used a public GeoJSON file for California counties, which caused critical spatial join issues — notably, it failed to match the 1906 San Francisco earthquake (Magnitude 7.9) to San Francisco County. This was due to incomplete or oversimplified polygon data.
+Early analysis used a simplified GeoJSON file that **missed historic events** (e.g. the 1906 San Francisco earthquake). This was caused by incomplete polygon boundaries.
 
-To ensure precise matching, the project was updated to use official U.S. Census Bureau **TIGER/Line shapefiles (2023)**. These high-resolution boundaries allowed accurate spatial joins for both modern and historic earthquake events, improving the reliability of county-level analysis.
+✅ To fix this, the project was upgraded to **official 2023 TIGER/Line shapefiles** from the U.S. Census. These high-resolution county geometries enabled accurate spatial joins and reliable historic analysis.
+
+---
 
 ## 🔍 Data Filtering Notes
 
-To ensure the analysis focuses on meaningful, insurance-relevant events, earthquakes with magnitudes below 4.0 were excluded. Lower-magnitude quakes (3.5–3.9) are typically too minor to cause damage or result in insurance claims.
+- Earthquakes **below Magnitude 4.0** were excluded, as they rarely cause damage or trigger insurance claims.
+- The cleaned dataset includes **5,109 events** from **1769 to 2025** with `Mag ≥ 4.0`, focused exclusively on **California**.
+- Data was collected from the **USGS Earthquake API** and processed with Python.
 
-The dataset spans from 1769 (first recorded quake in California) through 2025, including 5,109 earthquake events of magnitude 4.0 or higher.
+---
 
 ## 🚧 Project Status
 
-- [x] Project folder and structure initialized
-- [x] Geographic map loaded and validated (TIGER/Line shapefiles)
-- [x] Earthquake data collected, filtered, and cleaned (USGS)
-- [ ] Demographic and insurance data merged
-- [x] Exploratory Data Analysis (EDA): spatial and temporal
-- [ ] Machine learning risk modeling
-- [ ] Dashboard or summary visualization (Power BI / Tableau)
+- ✅ Folder and structure initialized
+- ✅ TIGER shapefiles loaded and mapped
+- ✅ Earthquake data collected and filtered
+- ✅ Spatial join of quakes to counties
+- ✅ Exploratory Data Analysis (EDA): maps & time series
+- 🔜 Merge demographic & housing data
+- 🔜 Predictive modeling
+- 🔜 Dashboard visualization (Power BI or Tableau)
+
+---
 
 ## 📊 Potential Deliverables
 
-- Interactive map of earthquake activity by county
-- Choropleth maps of strong, average, and maximum magnitude events
-- Timeline charts showing strong earthquake activity by year and by decade
-- Clusters of high-risk / low-coverage regions
-- Predictive model estimating earthquake damage risk or potential claims
-- Dashboard summarizing key findings for stakeholders
+- Static and interactive county-level maps (strong, average, max magnitude)
+- Choropleth maps for rapid risk assessment
+- Timeline plots of strong earthquake frequency by year & decade
+- Cluster analysis to highlight high-risk, underserved regions
+- Predictive model estimating county-level risk or expected claims
+- Dashboard to visualize findings for business stakeholders
+
+---
 
 <details>
 <summary>📈 <strong>Key Insights from EDA (click to expand)</strong></summary>
 
-- Counties such as **Mono**, **San Bernardino**, and **Santa Clara** experience frequent or severe seismic activity  
-- Counties with the highest number of strong earthquakes (Magnitude ≥ 6.0) include **San Bernardino**, **Humboldt**, **Inyo**, and **Santa Clara**  
-- The strongest historical earthquakes were recorded in **San Luis Obispo (7.93)**, **San Francisco (7.90)**, **San Bernardino**, and **Kern** — key regions for elevated seismic risk  
-- These counties may warrant focused attention in insurance underwriting, pricing, and mitigation strategies  
-- Seismic activity has varied over time, with notable spikes in the early and mid 20th century  
-- Using official **TIGER/Line shapefiles** improved spatial accuracy and corrected critical mismatches (e.g., the 1906 San Francisco quake)  
-- Strong earthquakes (≥6.0) are relatively rare but tend to cluster geographically  
-- While infrequent, these high-magnitude events are highly significant for risk modeling and insurance planning  
+- **San Bernardino**, **Humboldt**, and **Santa Clara** recorded the **highest number** of strong earthquakes (`Mag ≥ 6.0`)
+- **San Luis Obispo (7.93)** and **San Francisco (7.90)** experienced the **strongest recorded earthquakes**
+- Strong earthquakes are **rare but geographically concentrated**, mostly affecting inland and coastal fault zones
+- Seismic activity shows **notable spikes in early & mid 20th century**
+- Using **official TIGER/Line boundaries** corrected spatial errors — e.g. recovering the historic 1906 San Francisco event
+- Counties with frequent or extreme events may warrant **premium adjustments** or **enhanced coverage**
+- Visualizations (choropleths, timelines, folium maps) offer valuable insights for **underwriting and strategic planning**
 
 </details>
 
+---
 
 ## ✍️ Author
 
-Anna Piterskaya — Aspiring Data Scientist based in California  
-Working toward a data science role in the insurance industry (goal: AAA Insurance)
+**Anna Piterskaya**  
+Aspiring Data Scientist | Based in California  
+🎯 Career Goal: Data Science role in the Insurance industry — especially at **AAA Insurance**  
+📫 GitHub: [annapiter](https://github.com/annapiter)
 
+---
+
+## 🚀 Next Steps
+
+> Integration of **demographic and insurance data** is planned to enhance risk modeling and build interactive **dashboards** for business users.
