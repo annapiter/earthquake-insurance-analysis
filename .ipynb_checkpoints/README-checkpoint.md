@@ -104,8 +104,9 @@ Preview key maps directly from your browser:
 - [Strong Earthquakes by County (Folium)](https://annapiter.github.io/earthquake-insurance-analysis/strong_quakes_map.html)
 - [Maximum Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/max_magnitude_map.html)
 - [Average Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/avg_magnitude_map.html)
+- [All Earthquakes (Clustered View)](https://annapiter.github.io/earthquake-insurance-analysis/all_earthquakes_clustered.html)
 
-These interactive maps allow you to explore county-level earthquake risk with hoverable tooltips and zooming features.
+These interactive maps allow you to explore California's earthquake activity and risk, including a clustered timeline of all events from 1769 to 2025.
 
 
 ---
