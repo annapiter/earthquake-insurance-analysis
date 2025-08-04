@@ -101,7 +101,7 @@ To fix this, the project was upgraded to **official 2023 TIGER/Line shapefiles**
 
 Preview key maps directly from your browser:
 
-- [Strong Earthquakes by County (Folium)](https://annapiter.github.io/earthquake-insurance-analysis/strong_quake_map.html)
+- [Strong Earthquakes by County (Folium)](https://annapiter.github.io/earthquake-insurance-analysis/strong_quakes_map.html)
 - [Maximum Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/max_magnitude_map.html)
 - [Average Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/avg_magnitude_map.html)
 
