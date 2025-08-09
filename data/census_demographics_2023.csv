@@ -1,0 +1,59 @@
+county,total_population,median_income,total_housing_units,owner_occupied,renter_occupied,STATEFP,COUNTYFP
+"Alameda County, California",1651949,126240,593117,320712,272405,06,001
+"Alpine County, California",1695,110781,473,383,90,06,003
+"Amador County, California",41029,81526,16066,12863,3203,06,005
+"Butte County, California",209470,68574,82345,47987,34358,06,007
+"Calaveras County, California",45995,79877,17897,15099,2798,06,009
+"Colusa County, California",21895,75149,7466,4646,2820,06,011
+"Contra Costa County, California",1161458,125727,411662,278509,133153,06,013
+"Del Norte County, California",27293,66780,9621,6851,2770,06,015
+"El Dorado County, California",192299,106190,75719,57838,17881,06,017
+"Fresno County, California",1012152,71434,322163,178533,143630,06,019
+"Glenn County, California",28623,70487,9763,6157,3606,06,021
+"Humboldt County, California",135418,61135,54878,30879,23999,06,023
+"Imperial County, California",179319,56393,48844,27732,21112,06,025
+"Inyo County, California",18803,72432,7923,5316,2607,06,027
+"Kern County, California",910433,67660,281416,168321,113095,06,029
+"Kings County, California",152830,68750,43736,23976,19760,06,031
+"Lake County, California",68139,58738,26364,18701,7663,06,033
+"Lassen County, California",31177,64395,9060,6180,2880,06,035
+"Los Angeles County, California",9848406,87760,3390254,1562207,1828047,06,037
+"Madera County, California",158790,75496,44513,29168,15345,06,039
+"Marin County, California",258765,142785,103201,65927,37274,06,041
+"Mariposa County, California",17060,65378,7515,5616,1899,06,043
+"Mendocino County, California",90709,64688,34570,21044,13526,06,045
+"Merced County, California",285597,65044,84605,45097,39508,06,047
+"Modoc County, California",8646,56648,3264,2524,740,06,049
+"Mono County, California",13169,86953,5521,3819,1702,06,051
+"Monterey County, California",435834,94486,132046,69033,63013,06,053
+"Napa County, California",136070,108970,49663,31985,17678,06,055
+"Nevada County, California",102452,84905,41873,31170,10703,06,057
+"Orange County, California",3164063,113702,1074654,606605,468049,06,059
+"Placer County, California",412435,114678,155422,115446,39976,06,061
+"Plumas County, California",19607,64946,8055,6024,2031,06,063
+"Riverside County, California",2449909,89672,762234,524872,237362,06,065
+"Sacramento County, California",1584047,88724,568223,333143,235080,06,067
+"San Benito County, California",66056,108289,20188,13613,6575,06,069
+"San Bernardino County, California",2187816,82184,668004,411081,256923,06,071
+"San Diego County, California",3282782,102285,1159822,632194,527628,06,073
+"San Francisco County, California",836321,141446,362650,139610,223040,06,075
+"San Joaquin County, California",787416,88531,241373,148522,92851,06,077
+"San Luis Obispo County, California",281486,93398,108897,67403,41494,06,079
+"San Mateo County, California",745100,156000,264424,156244,108180,06,081
+"Santa Barbara County, California",443975,95977,148960,78754,70206,06,083
+"Santa Clara County, California",1903297,159674,654467,361910,292557,06,085
+"Santa Cruz County, California",266021,109266,96873,58102,38771,06,087
+"Shasta County, California",181554,71931,71473,46711,24762,06,089
+"Sierra County, California",2731,60000,1206,944,262,06,091
+"Siskiyou County, California",43834,55499,18907,13179,5728,06,093
+"Solano County, California",450824,99994,155800,98510,57290,06,095
+"Sonoma County, California",485642,102840,190498,118489,72009,06,097
+"Stanislaus County, California",552250,79661,176457,107644,68813,06,099
+"Sutter County, California",98971,75450,33240,19672,13568,06,101
+"Tehama County, California",65520,61834,24526,16574,7952,06,103
+"Trinity County, California",15886,53498,5373,3924,1449,06,105
+"Tulare County, California",475774,69489,142026,83253,58773,06,107
+"Tuolumne County, California",54873,72259,22809,16912,5897,06,109
+"Ventura County, California",838259,107327,278045,178388,99657,06,111
+"Yolo County, California",217782,88818,76640,41046,35594,06,113
+"Yuba County, California",83079,73313,28063,17769,10294,06,115

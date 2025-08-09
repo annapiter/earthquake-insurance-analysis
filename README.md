@@ -34,6 +34,9 @@ This project analyzes earthquake activity and insurance-relevant risk factors ac
 earthquake_insurance_project/
 ├── data/ # Raw input files (shapefiles, CSVs, exports)
 ├── notebooks/ # Jupyter notebooks organized by stage
+│ ├── 01_data_collection.ipynb
+│ ├── 02_demographics_and_housing_data.ipynb
+│ ├── 03_insurance_variables.ipynb (planned)
 ├── output/ # Processed data, maps, charts, summaries
 ├── scripts/ # Python scripts (optional)
 ├── dashboards/ # Power BI / Tableau dashboards (future)
@@ -62,16 +65,18 @@ To fix this, the project was upgraded to **official 2023 TIGER/Line shapefiles**
 
 ## 🚧 Project Status
 
-- ✅ Folder and structure initialized
-- ✅ TIGER shapefiles loaded and mapped
-- ✅ Earthquake data collected and filtered
-- ✅ Spatial join of quakes to counties
-- ✅ Exploratory Data Analysis (EDA): maps & time series
-- 🔜 Merge demographic & housing data
-- 🔜 Predictive modeling
-- 🔜 Dashboard visualization (Power BI or Tableau)
+- ✅ **Phase 0** – [Folder and structure initialized](https://github.com/annapiter/earthquake-insurance-analysis)
+- ✅ **Phase 1** – [TIGER shapefiles loaded and mapped](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
+- ✅ **Phase 1** – [Earthquake data collected and filtered](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
+- ✅ **Phase 1** – [Spatial join of quakes to counties](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
+- ✅ **Phase 1** – [Exploratory Data Analysis (EDA): maps & time series](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
+- ✅ **Phase 2** – [Demographic & housing data collected and merged](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/02_demographics_and_housing_data.ipynb)
+- 🔜 **Phase 2** – [Insurance data collection and merging](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/03_insurance_variables.ipynb)
+- 🔜 **Phase 3** – Predictive modeling
+- 🔜 **Phase 4** – Dashboard visualization (Power BI or Tableau)
 
 ---
+
 
 ## 📊 Potential Deliverables
 
