@@ -71,12 +71,43 @@ To fix this, the project was upgraded to **official 2023 TIGER/Line shapefiles**
 - ✅ **Phase 1** – [Spatial join of quakes to counties](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
 - ✅ **Phase 1** – [Exploratory Data Analysis (EDA): maps & time series](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
 - ✅ **Phase 2** – [Demographic & housing data collected and merged](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/02_demographics_and_housing_data.ipynb)
-- 🔜 **Phase 2** – [Insurance data collection and merging](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/03_insurance_variables.ipynb)
+- ✅ **Phase 2** – [Insurance variables merged (EQ coverage, homeowners policies, FEMA, loss ratios)](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/02_insurance_variables.ipynb)
+- 🔜 **Phase 3** – Exploratory Data Analysis & Derived Variables (e.g. underinsured regions)
 - 🔜 **Phase 3** – Predictive modeling
 - 🔜 **Phase 4** – Dashboard visualization (Power BI or Tableau)
 
 ---
 
+## 🧮 New Variables Added in Phase 2
+
+The following indicators were loaded and merged into the extended GeoDataFrame:
+
+| Variable                      | Source         | Description                                                               |
+|------------------------------|----------------|---------------------------------------------------------------------------|
+| `eq_takeup_pct`              | CDI (2023)     | % of residential units with earthquake insurance policies                 |
+| `homeowners_coverage_pct`    | CDI (2023)     | % of total housing units covered by homeowners insurance                  |
+| `Modeled_Loss_Ratio_2018_Pct`| CDI Risk Zones | Ratio of insured loss (PML) to total liability by EQ zone                |
+| `fema_funding_earthquake`    | FEMA API       | Total public assistance obligated to each county (EQ-related disasters)   |
+
+✅ These variables enable comparative analysis of **risk vs coverage**, helping identify counties that may be **underinsured**, **highly exposed**, or both.
+
+---
+
+🔜 **Coming Soon: Derived Risk Metric**
+
+The next notebook will define a composite variable:  
+**`underinsured_risk_score`** *(working name)*
+
+This derived indicator will combine:
+
+- Seismic risk (zone & modeled loss ratio)
+- Insurance take-up rate
+- FEMA disaster aid
+- Demographic vulnerability
+
+📌 **Goal**: Identify counties at **high financial risk** from earthquakes due to insufficient insurance coverage and high hazard exposure — valuable for **pricing**, **strategic planning**, or **public policy**.
+
+---
 
 ## 📊 Potential Deliverables
 
@@ -127,4 +158,5 @@ Aspiring Data Scientist | Based in California
 
 ## 🚀 Next Steps
 
-> Integration of **demographic and insurance data** is planned to enhance risk modeling and build interactive **dashboards** for business users.
+> Collect and map California fault line data for use in spatial risk modeling.
+
