@@ -30,7 +30,8 @@ This project analyzes earthquake activity and insurance-relevant risk factors ac
 
 <details>
 <summary>📂 <strong>Project Structure</strong> (click to expand)</summary>
-    
+
+```
 earthquake_insurance_project/
 ├── data/                   # Raw input files (shapefiles, CSVs, exports)
 ├── notebooks/              # Jupyter notebooks organized by stage
@@ -42,6 +43,7 @@ earthquake_insurance_project/
 ├── dashboards/             # Power BI / Tableau dashboards (future)
 ├── README.md               # Project overview and insights
 └── requirements.txt
+```
 
 </details>
 
