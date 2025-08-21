@@ -32,15 +32,15 @@ This project analyzes earthquake activity and insurance-relevant risk factors ac
 <summary>📂 <strong>Project Structure</strong> (click to expand)</summary>
     
 earthquake_insurance_project/
-├── data/ # Raw input files (shapefiles, CSVs, exports)
-├── notebooks/ # Jupyter notebooks organized by stage
-│ ├── 01_data_collection.ipynb
-│ ├── 02_demographics_and_housing_data.ipynb
-│ ├── 03_insurance_variables.ipynb (planned)
-├── output/ # Processed data, maps, charts, summaries
-├── scripts/ # Python scripts (optional)
-├── dashboards/ # Power BI / Tableau dashboards (future)
-├── README.md # Project overview and insights
+├── data/                   # Raw input files (shapefiles, CSVs, exports)
+├── notebooks/              # Jupyter notebooks organized by stage
+│   ├── 01_data_collection.ipynb
+│   ├── 02_demographics_and_housing_data.ipynb
+│   ├── 02_insurance_variables.ipynb
+├── output/                 # Processed data, maps, charts, summaries
+├── scripts/                # Python scripts (optional)
+├── dashboards/             # Power BI / Tableau dashboards (future)
+├── README.md               # Project overview and insights
 └── requirements.txt
 
 </details>
