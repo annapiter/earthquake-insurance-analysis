@@ -1,0 +1,55 @@
+county,eq_count,eq_mean_mag,eq_max_mag
+San Bernardino,509,4.45,7.5
+Mono,374,4.44,6.8
+Kern,354,4.45,7.5
+Imperial,317,4.47,6.9
+Inyo,204,4.51,7.4
+Los Angeles,194,4.5,6.7
+San Benito,186,4.51,6.5
+Riverside,166,4.52,6.7
+Humboldt,145,4.68,7.2
+Fresno,115,4.41,6.7
+Monterey,100,4.55,6.5
+San Diego,96,4.5,6.8
+Santa Clara,86,4.72,7.4
+Orange,77,4.49,6.4
+Santa Cruz,61,4.59,6.9
+Sonoma,57,4.39,6.4
+San Luis Obispo,43,4.63,7.9
+Mendocino,34,4.62,6.7
+Contra Costa,30,4.47,5.8
+Plumas,26,4.69,6.2
+Ventura,25,4.48,5.6
+Alameda,25,4.68,6.8
+Shasta,23,4.48,5.5
+Lake,23,4.33,5.1
+Butte,21,4.52,5.7
+Alpine,21,4.43,5.6
+Santa Barbara,19,4.96,6.3
+Kings,13,4.22,4.7
+Nevada,13,4.64,5.9
+Siskiyou,13,4.34,4.9
+Sierra,11,4.96,6.0
+Trinity,10,4.35,5.4
+Tehama,9,4.67,5.6
+Lassen,9,5.14,6.2
+San Mateo,8,4.94,5.9
+Tulare,8,4.36,5.0
+Placer,7,4.57,5.1
+Napa,7,4.79,6.0
+Solano,6,5.69,6.6
+Glenn,6,4.35,4.8
+El Dorado,4,4.78,5.1
+Modoc,3,4.28,4.6
+Merced,3,4.31,4.5
+Mariposa,3,4.26,4.5
+San Joaquin,2,5.15,6.0
+San Francisco,2,6.45,7.9
+Stanislaus,2,5.42,6.3
+Sacramento,2,4.37,4.5
+Madera,2,4.06,4.1
+Marin,2,5.05,5.5
+Yolo,2,4.35,4.5
+Del Norte,1,5.86,5.9
+Colusa,1,4.13,4.1
+Tuolumne,1,4.0,4.0

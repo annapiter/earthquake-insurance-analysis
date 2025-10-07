@@ -1,0 +1,59 @@
+county,faults_list
+Sierra,"['Mohawk Valley fault zone', 'Polaris fault', 'Dog Valley fault zone', 'Upper Long Valley fault zone']"
+Sacramento,[]
+Santa Barbara,"['Santa Cruz Island fault zone', 'Red Mountain fault', 'Red Mountain fault zone', 'North Channel-Pitas Point fault', 'Shepard Mesa fault', 'Isla Vista fault', 'Mesa-Rincon Creek fault zone', 'Lavigia fault zone', 'Loon Point fault', 'Ortega Hill fault', 'El Encanto fault', 'Mission Ridge fault system', 'Carneros fault', 'San Jose fault zone', 'Santa Ynez fault zone', 'Baseline fault', 'Los Alamos fault', 'Little Pine fault zone', 'Santa Ynez River fault zone', ""Lion's Head fault zone"", 'Casmalia fault zone', 'San Luis Range fault system (South Margin)', 'Hosgri  fault zone', 'San Pedro fault', 'San Gregorio-Hosgri fault zone']"
+Calaveras,['Foothills fault system']
+Ventura,"['Malibu Coast fault', 'Bailey fault', 'Chatsworth fault', 'Sierra Madre fault zone', 'Simi-Santa Rosa fault zone', 'Northridge blind thrust', 'Faults of Orcutt and Timber Canyons', 'Del Valle fault', 'Sisar fault zone', 'San Cayetano fault', 'Holser fault', 'San Gabriel fault zone', 'Santa Cruz Island fault zone', 'Montalvo fault', 'Wright Road fault', 'Ventura fault', 'Oak Ridge fault', 'Pitas Point fault', 'Javon Canyon fault', 'Red Mountain fault', 'Red Mountain fault zone', 'Shepard Mesa fault', 'Mesa-Rincon Creek fault zone', 'Faults near Oakview and Meiners Oaks', 'Lion Canyon fault', 'Mission Ridge fault system', 'Santa Ynez fault zone', 'Pine Mountain fault', 'Big Pine fault zone']"
+Los Angeles,"['San Clemente fault', 'Catalina fault', 'Palos Verdes fault zone', 'THUMS-Huntington Beach', 'Cabrillo fault', 'Los Alamitos fault', 'Puente Hills blind thrust system', 'Charnock fault', 'Elsinore fault zone', 'Newport-Inglewood-Rose Canyon fault zone', 'Central Avenue fault', 'Overland Avenue fault', 'Santa Monica fault', 'Malibu Coast fault', 'East Montebello fault', 'Hollywood fault', 'Eagle Rock fault', 'Raymond fault', 'Verdugo fault', 'Chatsworth fault', 'San Jose fault', 'Indian Hill fault', 'San Antonio fault', 'Sierra Madre fault zone', 'Northridge Hills fault', 'Simi-Santa Rosa fault zone', 'Mission Hills fault zone', 'Northridge blind thrust', 'Del Valle fault', 'Holser fault', 'San Gabriel fault zone', 'Santa Felicia fault', 'Clearwater fault zone', 'Llano fault', 'Mirage Valley fault zone', 'Garlock fault zone', 'San Andreas fault zone']"
+Sonoma,"['San Andreas fault zone', 'Rodgers Creek fault', 'Bennett Valley fault zone', 'Alexander-Redwood Hill fault zone', 'Healdsburg fault', 'Chianti fault', 'Geyser Peak fault zone', 'Maacama fault zone']"
+Kings,['Great Valley thrust fault system']
+San Diego,"['San Felipe fault zone', 'Chula Vista fault', 'Point Loma fault zone', 'Rose Canyon fault zone', 'Newport-Inglewood fault zone', 'Elsinore fault zone', 'Newport-Inglewood-Rose Canyon fault zone', 'San Jacinto fault']"
+Placer,"['Foothills fault system', 'West Tahoe-Dollar Point fault zone', 'North Tahoe fault', 'Polaris fault']"
+San Francisco,"['San Andreas fault zone', 'Golden Gate fault']"
+Marin,"['San Gregorio-Hosgri fault zone', 'San Andreas fault zone', 'Potato Patch fault', 'Golden Gate fault']"
+Mariposa,[]
+Lassen,"['Honey Lake fault zone', 'Walker Spring fault', 'Almanor fault zone', 'Upper Long Valley fault zone', 'Fort Sage fault', 'Warm Springs Valley fault zone', 'Amedee fault', 'Surprise Valley fault', 'Hat Creek fault zone', 'McArthur fault zone', 'Nelson Corral fault', 'Pittville fault', 'Likely fault zone']"
+Napa,"['Cordelia fault zone', 'West Napa fault', 'Green Valley fault', 'Soda Creek fault', 'Hunting Creek-Berryessa fault system']"
+Shasta,"['Battle Creek fault zone', 'Hat Creek fault zone', 'McArthur fault zone', 'Rocky Ledge fault zone', 'Pittville fault']"
+Monterey,"['Rinconada fault zone', 'San Gregorio-Hosgri fault zone', 'Miller Creek fault', 'Reliz fault zone', 'Chupines fault zone', 'Monterey Bay- Tularcitos fault zone', 'San Andreas fault zone', 'Pfeiffer Point fault', 'Laureles fault', 'East Monterey Bay fault zone', 'San Gregorio fault zone', 'Zayante-Vergeles fault zone']"
+Trinity,['Bartlett Springs fault system']
+Mendocino,"['San Andreas fault zone', 'Hathaway Creek fault', 'Wight Way fault', 'Maacama fault zone', 'West Tahoe-Dollar Point fault zone', 'Bartlett Springs fault system', 'Noyo Basin fault zone']"
+Inyo,"['Southern Death Valley fault zone', 'Nopah fault', 'Pahrump fault', 'Black Mountains fault zone', 'Ash Meadows fault zone', 'Cross Valley fault', 'Echo Canyon thrust', 'Little Lake fault zone', 'Airport Lake fault zone', 'Panamint Valley fault zone', 'Ash Hill fault', 'Hanaupah fault', 'Towne Pass fault', 'Lee Flat fault zone', 'Hunter Mountain- Saline Valley fault zone', 'Grapevine fault', 'Southern Sierra Nevada fault zone', 'Owens Valley fault zone', 'Deep Springs fault', 'Round Valley fault', 'White Mountains fault zone', 'Wheeler Crest fault', 'Fish Slough fault zone', 'Tin Mountain fault', 'Northern Death Valley fault zone', 'Fish Lake Valley fault zone']"
+Mono,"['Round Valley fault', 'White Mountains fault zone', 'Wheeler Crest fault', 'Fish Slough fault zone', 'Owens River Gorge fault zone', 'Hilton Creek fault', 'Fish Lake Valley fault zone', 'Long Valley fault zone', 'Hartley Springs fault zone', 'Black Mountain fault', 'Silver Lake fault', 'Mono Lake fault', 'Robinson Creek fault zone', 'West Walker River fault zone', 'Slinkard Valley fault', 'Antelope Valley fault zone']"
+Tuolumne,['Foothills fault system']
+Solano,"['Concord fault', 'Rio Vista fault', 'Cordelia fault zone', 'West Napa fault', 'Green Valley fault', 'Lagoon Valley fault']"
+San Bernardino,"['Elsinore fault zone', 'Central Avenue fault', 'San Jacinto fault', 'Long Canyon fault', 'Burnt Mountain fault zone', 'Eureka Peak fault', 'Pinto Mountain fault zone (includes Morongo Valley fault)', 'San Gorgonio Mountain fault', 'Mesquite Lake fault', 'Johnson Valley fault zone', 'Crafton Hills fault zone', 'Red Hill-Etiwanda Avenue fault', 'San Antonio fault', 'Waterman Canyon fault zone', 'Cleghorn fault zone', 'Tunnel Ridge fault', 'North Frontal thrust system', 'Arrastre Canyon Narrows fault', 'Sierra Madre fault zone', 'Silver Reef fault', 'Old Woman Springs fault', 'Homestead Valley fault zone', 'Pisgah-Bullion fault zone', 'Camp Rock-Emerson-Copper Mountain fault zone', 'Bullion Mountains fault zone', 'Chemehuevi graben', 'Calico-Hidalgo fault zone', 'Lavic Lake fault', 'Manix fault', 'Bowen Ranch fault', 'Helendale-South Lockhart fault zone', 'Mirage Valley fault zone', 'Lenwood-Lockhart fault zone', 'Kramer Hills fault zone', 'Mt. General fault', 'Harper fault zone', 'Blackwater fault zone', 'Garlock fault zone', 'Baker fault', 'Red Pass fault', 'Owl Lake fault', 'Southern Death Valley fault zone', 'Tank Canyon fault', 'Panamint Valley fault zone', 'San Andreas fault zone']"
+Contra Costa,"['Hayward fault zone', 'Calaveras fault zone', 'Greenville fault zone', 'Pleasanton fault', 'Concord fault']"
+Alpine,"['East Carson Valley fault zone', 'Genoa fault']"
+El Dorado,"['Foothills fault system', 'West Tahoe-Dollar Point fault zone']"
+Yolo,"['Hunting Creek-Berryessa fault system', 'Dunnigan Hills fault']"
+Yuba,['Foothills fault system']
+San Benito,"['San Andreas fault zone', 'Pine Rock fault zone', 'Tres Pinos fault', 'Quien Sabe fault', 'Zayante-Vergeles fault zone', 'Sargent fault zone', 'Calaveras fault zone']"
+Humboldt,"['San Andreas fault zone', 'West Tahoe-Dollar Point fault zone', 'Surf Zone fault', 'Mattole Canyon fault zone', 'Honeydew fault zone', 'Russ fault zone', 'Little Salmon fault zone', 'Table Bluff fault zone', 'Mad River fault zone', 'Bald Mountain-Big Lagoon fault zone']"
+Riverside,"['Elsinore fault zone', 'Murrietta Hot Springs fault', 'Beaumont Plain fault zone', 'Banning fault', 'Hot Springs fault', 'Hidden Spring fault zone', 'San Jacinto fault', 'Sheephole fault', 'Dry Lake fault', 'Mecca Hills fault zone', 'Skeleton Canyon fault zone', 'Coachella Fan Fault Zone', 'Blythe graben', 'Smoketree Wash fault', 'Indio Hills Fault Zone', 'San Gorgonio Pass fault zone', 'Long Canyon fault', 'Burnt Mountain fault zone', 'Eureka Peak fault', 'Pinto Mountain fault zone (includes Morongo Valley fault)', 'Crafton Hills fault zone', 'San Andreas fault zone']"
+Kern,"['Pleito fault zone', 'White Wolf fault zone', 'Edison fault', 'Breckenridge fault', 'Kern Gorge fault', 'Kern Front fault', 'Premier fault', 'Lenwood-Lockhart fault zone', 'Garlock fault zone', 'Little Lake fault zone', 'Airport Lake fault zone', 'Kern Canyon fault zone', 'Southern Sierra Nevada fault zone', 'Big Pine fault zone', 'Wheeler Ridge fault zone', 'Buena Vista fault', 'New Hope fault', 'Pond fault', 'San Andreas fault zone']"
+Colusa,[]
+Del Norte,[]
+Modoc,"['Surprise Valley fault', 'Lake City fault zone', 'Pittville fault', 'Likely fault zone', 'Fitzhugh Creek fault zone', 'Saddle Blanket Flat fault zone', 'Davis Creek fault zone', 'Gillem-Big Crack fault system', 'Goose Lake graben faults (Goose Lake fault)', 'Goose Lake graben faults']"
+Fresno,"['Nunez fault', 'Great Valley thrust fault system', ""O'Neill fault system"", 'Ortigalita fault zone', 'San Joaquin fault']"
+Madera,[]
+Santa Clara,"['San Andreas fault zone', 'Butano fault', 'Monte Vista-Shannon fault zone', 'Hayward fault zone', 'Sargent fault zone', 'Calaveras fault zone', 'Greenville fault zone']"
+Tehama,['Battle Creek fault zone']
+San Joaquin,"['San Joaquin fault', 'Corral Hollow-Carnegie fault zone', 'Midway fault']"
+Alameda,"['Williams fault', 'Hayward fault zone', 'Verona fault', 'Calaveras fault zone', 'Corral Hollow-Carnegie fault zone', 'Las Positas fault', 'Greenville fault zone', 'Pleasanton fault', 'Midway fault']"
+Nevada,"['Foothills fault system', 'Polaris fault', 'Dog Valley fault zone']"
+Butte,['Foothills fault system']
+Merced,"[""O'Neill fault system"", 'Ortigalita fault zone', 'San Joaquin fault']"
+Tulare,['Kern Canyon fault zone']
+Stanislaus,"['Ortigalita fault zone', 'San Joaquin fault']"
+Orange,"['THUMS-Huntington Beach', 'Los Alamitos fault', 'Newport-Inglewood fault zone', 'Elsinore fault zone', 'Newport-Inglewood-Rose Canyon fault zone', 'Pelican Hill fault', 'San Joaquin Hills thrust', 'Peralta Hills fault', 'faults in West Coyote Hills']"
+Imperial,"['Davies Valley fault', 'Pinto Wash fault zone', 'Northern Centinela fault zone', 'Yuha Basin faults', 'Yuha Well Fault Zone', 'Route 247 fault', 'Ocotillo fault zone', 'Imperial fault', 'Brawley Seismic Zone', 'Elsinore fault zone', 'Extra fault zone', 'Hot Springs fault', 'San Jacinto fault', 'San Andreas fault zone']"
+Sutter,[]
+Amador,['Foothills fault system']
+Lake,"['Hunting Creek-Berryessa fault system', 'Collayomi fault zone', 'Wight Way fault', 'Konocti Bay fault zone', 'Adobe Creek fault', 'Cross Spring fault zone', 'Big Valley fault', 'Bartlett Springs fault system']"
+Plumas,"['Mohawk Valley fault zone', 'Little Grass Valley fault', 'Indian Valley fault', 'Skinner Flat fault', 'Butt Creek fault zone', 'Walker Spring fault', 'Almanor fault zone']"
+San Mateo,"['San Pedro fault', 'San Gregorio-Hosgri fault zone', 'San Andreas fault zone', 'San Gregorio fault zone', 'Monte Vista-Shannon fault zone', 'Serra fault zone', 'Potato Patch fault']"
+Siskiyou,"['Mayfield fault zone', 'Cedar Mountain fault system', 'Gillem-Big Crack fault system']"
+Santa Cruz,"['San Gregorio-Hosgri fault zone', 'San Andreas fault zone', 'East Monterey Bay fault zone', 'San Gregorio fault zone', 'Ben Lomond fault', 'Butano fault', 'Zayante-Vergeles fault zone']"
+Glenn,['Stoney Creek fault']
+San Luis Obispo,"['San Luis Range fault system (South Margin)', 'Hosgri  fault zone', 'West Huasna fault zone', 'Los Osos fault zone', 'Cambria fault zone', 'Oceanic fault zone', 'San Juan fault zone', 'San Simeon fault', 'Rinconada fault zone', 'San Gregorio-Hosgri fault zone', 'San Andreas fault zone']"
