@@ -220,6 +220,10 @@ The project saves both intermediate and final cleaned datasets in **two formats*
 
 Explore California's earthquake risk and insurance coverage interactively:
 
+### 📍 Map Gallery (GitHub Pages)
+Explore all maps in one place:  
+👉 [View Interactive Map Gallery](https://annapiter.github.io/earthquake-insurance-analysis/maps/)
+
 ### 🧨 Earthquake Activity (1769–2025)
 * [Strong Earthquakes by County (Folium)](https://annapiter.github.io/earthquake-insurance-analysis/strong_quakes_map.html)
 * [Maximum Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/max_magnitude_map.html)
