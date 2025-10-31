@@ -290,24 +290,24 @@ Counties were classified into two high-priority tiers:
 👉 [View Full Map Gallery](https://annapiter.github.io/earthquake-insurance-analysis/maps/)
 
 ### 🧨 Earthquake Activity
-- [Strong Earthquakes by County](https://annapiter.github.io/earthquake-insurance-analysis/strong_quakes_map.html)
-- [Max Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/max_magnitude_map.html)
-- [Average Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/avg_magnitude_map.html)
-- [All Quakes: Clustered View](https://annapiter.github.io/earthquake-insurance-analysis/all_earthquakes_clustered.html)
+- [Strong Earthquakes by County](https://annapiter.github.io/earthquake-insurance-analysis/maps/strong_quakes_map.html)
+- [Max Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/maps/max_magnitude_map.html)
+- [Average Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/maps/avg_magnitude_map.html)
+- [All Quakes: Clustered View](https://annapiter.github.io/earthquake-insurance-analysis/maps/all_earthquakes_clustered.html)
 
 ### 🗺️ Fault Line Exposure
-- [Counties Intersecting Faults](https://annapiter.github.io/earthquake-insurance-analysis/map_fault_intersection.html)
-- [Fault Line Length by County](https://annapiter.github.io/earthquake-insurance-analysis/map_fault_length_by_county.html)
+- [Counties Intersecting Faults](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_fault_intersection.html)
+- [Fault Line Length by County](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_fault_length_by_county.html)
 
 ### 💡 Social Vulnerability & Insurance
-- [Seasonal Vacancy Rates (ACS)](https://annapiter.github.io/earthquake-insurance-analysis/map_seasonal_vacancy.html)
-- [EQ Take-up vs. Seasonal Housing](https://annapiter.github.io/earthquake-insurance-analysis/map_seasonal_plus_eq_takeup.html)
+- [Seasonal Vacancy Rates (ACS)](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_seasonal_vacancy.html)
+- [EQ Take-up vs. Seasonal Housing](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_seasonal_plus_eq_takeup.html)
 
 ### ⚠️ Underinsurance Hotspots
-- [Risk Score – Fault Zone Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_fault_zone.html)
-- [Risk Score – High Quake Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_quake_zone.html)
-- [Top 16 Underinsured Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_top16.html)
-- [Model Residuals](https://annapiter.github.io/earthquake-insurance-analysis/map_residuals_folium.html)
+- [Risk Score – Fault Zone Counties](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_underinsured_fault_zone.html)
+- [Risk Score – High Quake Counties](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_underinsured_quake_zone.html)
+- [Top 16 Underinsured Counties](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_underinsured_top16.html)
+- [Model Residuals](https://annapiter.github.io/earthquake-insurance-analysis/maps/map_residuals_folium.html)
 
 ---
 
