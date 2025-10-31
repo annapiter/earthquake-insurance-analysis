@@ -1,21 +1,23 @@
 # 🌍 Earthquake Insurance Risk Analysis in California
 
-> County-level geospatial risk model for earthquake insurance in California.  
-> Combines seismic data, housing vulnerability, and insurance coverage to highlight underinsured regions.
-
 ## 📌 Project Objective
 
-This project analyzes earthquake activity and insurance-relevant risk factors across California counties. The primary goal is to identify high-risk regions and provide actionable insights to support insurance pricing models, underwriting, and risk assessment — with particular relevance for companies like **AAA Insurance**.
+This project analyzes earthquake activity and risk-relevant property indicators across California counties. The goal is to identify high-risk, underinsured regions and deliver actionable insights for **real estate analytics**, **insurance modeling**, and **PropTech applications** — supporting pricing strategy, risk communication, and public resilience planning.
+
+It is especially relevant for organizations working in:
+- **PropTech** and real estate investment platforms  
+- **Insurance and catastrophe modeling firms** (e.g., AAA, CoreLogic, Hippo)  
+- **Public sector** and resilience-focused data initiatives
 
 ---
 
 ## 🔍 Key Questions
 
-* Which counties in California are most vulnerable to earthquakes?
-* Where do high-magnitude earthquakes most frequently occur?
-* How does seismic risk align with regional demographics or housing data?
-* Which regions may warrant premium adjustments or expanded coverage?
-* Is it possible to develop a predictive model for estimating earthquake damage risk or potential insurance claims?
+* Which California counties face the greatest earthquake hazard?
+* Where do strong earthquakes occur most frequently?
+* How does seismic risk intersect with regional demographics and housing?
+* Which counties may warrant premium adjustments or coverage expansion?
+* Can we predict take-up gaps and quantify underinsurance exposure?
 
 ---
 
@@ -24,8 +26,9 @@ This project analyzes earthquake activity and insurance-relevant risk factors ac
 
 * **Python**: pandas, geopandas, matplotlib, seaborn, folium, scikit-learn
 * **Jupyter Notebooks**
-* **Power BI / Tableau** (for future dashboards)
-* **USGS Earthquake API**, **USGS Quaternary Fault Database**, and **U.S. Census TIGER/Line Shapefiles**
+* **Power BI / Tableau** (dashboard visualizations in progress)
+* **USGS Earthquake API**, **USGS Quaternary Fault Database**
+* **U.S. Census TIGER/Line Shapefiles**
 
 </details>
 
@@ -36,25 +39,29 @@ This project analyzes earthquake activity and insurance-relevant risk factors ac
 
 ```
 earthquake_insurance_project/
-├── data/                   # Raw input files (shapefiles, CSVs, exports)
-├── notebooks/              # Jupyter notebooks organized by stage
-│   ├── 01_data_collection.ipynb
-│   ├── 02a_demographics_and_housing_data.ipynb
-│   ├── 02b_insurance_variables.ipynb
-│   ├── 02c_data_cleaning_and_preparation.ipynb
-│   ├── 03a_fault_lines_integration.ipynb
-│   ├── 03b_eda_and_underinsured_score.ipynb
-│   └── 04_predictive_modeling.ipynb
-├── output/                 # Processed data, charts, summaries
-│   ├── gdf_ca_cleaned.parquet         # Full GeoDataFrame for analysis
-│   ├── gdf_ca_cleaned.geojson         # Simplified for GIS tools
-│   ├── gdf_ca_scored_v4.parquet       # Final version with risk scores
-│   └── gdf_ca_scored_v4.geojson
-├── maps/                   # 📍 Folium interactive maps (hosted on GitHub Pages)
-├── scripts/                # Python helper scripts (optional)
-├── dashboards/             # Power BI / Tableau dashboards (future)
-├── README.md               # 📘 Project overview and insights
-└── requirements.txt        # Python dependencies
+├── data/ # Raw input files (shapefiles, CSVs, exports)
+├── notebooks/ # Jupyter notebooks by phase
+│ ├── 01_data_collection.ipynb
+│ ├── 02a_demographics_and_housing_data.ipynb
+│ ├── 02b_insurance_variables.ipynb
+│ ├── 02c_data_cleaning_and_preparation.ipynb
+│ ├── 03a_fault_lines_integration.ipynb
+│ ├── 03b_eda_and_underinsured_score.ipynb
+│ ├── 04_predictive_modeling.ipynb
+│ └── 04a_model_experiments.ipynb
+├── output/ # Processed data and summaries
+│ ├── gdf_ca_cleaned.parquet
+│ ├── gdf_ca_cleaned.geojson
+│ ├── gdf_ca_scored_v4.parquet
+│ ├── gdf_ca_scored_v4.geojson
+│ ├── gdf_ca_predicted_v5.parquet
+│ ├── gdf_ca_predicted_v5.geojson
+│ └── predictions_eq_takeup.csv
+├── maps/ # 📍 Folium interactive maps (GitHub Pages)
+├── scripts/ # Helper Python scripts (optional)
+├── dashboards/ # Tableau / Power BI dashboards (WIP)
+├── README.md
+└── requirements.txt
 ```
 
 </details>
@@ -63,201 +70,257 @@ earthquake_insurance_project/
 
 ## 🌍 Geospatial Accuracy Note
 
-Early analysis used a simplified GeoJSON file that **missed historic events** (e.g. the 1906 San Francisco earthquake). This was caused by incomplete polygon boundaries.
-
-To fix this, the project was upgraded to **official 2023 TIGER/Line shapefiles** from the U.S. Census. These high-resolution county geometries enabled accurate spatial joins and reliable historic analysis.
+Early analysis used simplified GeoJSON boundaries that omitted key historic events (e.g. 1906 San Francisco quake). The project was upgraded to **2023 TIGER/Line shapefiles**, enabling accurate joins and correct event recovery.
 
 ---
 
 ## 🔍 Data Filtering Notes
 
-* Earthquakes **below Magnitude 4.0** were excluded, as they rarely cause damage or trigger insurance claims.
-* The cleaned dataset includes **5,109 events** from **1769 to 2025** with `Mag ≥ 4.0`, focused exclusively on **California**.
-* Data was collected from the **USGS Earthquake API** and processed with Python.
+* Only **earthquakes ≥ Magnitude 4.0** were retained to focus on impactful events
+* Final dataset includes **5,109 earthquakes** from **1769 to 2025**, filtered to **California only**
+* Data sourced via the **USGS Earthquake API**
 
 ---
 
 ## 🚧 Project Status
 
-* ✅ **Phase 0** – [Folder and structure initialized](https://github.com/annapiter/earthquake-insurance-analysis)
-* ✅ **Phase 1** – [TIGER shapefiles loaded and mapped](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
-* ✅ **Phase 1** – [Earthquake data collected and filtered](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
-* ✅ **Phase 1** – [Spatial join of quakes to counties](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
-* ✅ **Phase 1** – [Exploratory Data Analysis (EDA): maps & time series](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/01_data_collection.ipynb)
-* ✅ **Phase 2** – [Demographic & housing data collected and merged](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/02a_demographics_and_housing_data.ipynb)
-* ✅ **Phase 2** – [Insurance variables merged (EQ coverage, homeowners policies, FEMA, loss ratios)](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/02b_insurance_variables.ipynb)
-* ✅ **Phase 2.5** – [Data cleaning and formatting completed](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/02c_data_cleaning_and_preparation.ipynb)
-* ✅ **Phase 3** – [Fault line features added: intersections, distance, length, azimuth](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/03a_fault_lines_integration.ipynb)
-* ✅ **Phase 3** – [Exploratory Data Analysis & Derived Risk Score (e.g. underinsured regions)](https://github.com/annapiter/earthquake-insurance-analysis/blob/main/notebooks/03b_eda_and_underinsured_score.ipynb)
-* 🕒 **Phase 4** – Predictive modeling
-* 🕒 **Phase 4** – Dashboard visualization (Power BI or Tableau)
+* ✅ **Phase 0** – Repo initialized, folder structure and planning scaffolded
+* ✅ **Phase 1** – Earthquake data collected, filtered, and spatially joined to counties
+* ✅ **Phase 2** – Demographic, housing, and insurance data merged (CDI, FEMA, ACS)
+* ✅ **Phase 2.5** – Data cleaning, formatting, and feature engineering
+* ✅ **Phase 3** – Fault lines integrated; composite risk and underinsurance scores developed
+* ✅ **Phase 4** – Predictive modeling, feature interpretation, and residual analysis  
+🕒 **Next** – Interactive dashboards (Tableau, Power BI) and portfolio presentation
 
 ---
 
-## 🧮 New Variables Added in Phase 2
-
-The following indicators were loaded and merged into the extended GeoDataFrame:
+## 🧮 Phase 2: Insurance Variables
 
 | Variable                      | Source         | Description                                                             |
 | ----------------------------- | -------------- | ----------------------------------------------------------------------- |
 | `eq_takeup_pct`               | CDI (2023)     | % of residential units with earthquake insurance policies               |
-| `homeowners_coverage_pct`     | CDI (2023)     | % of total housing units covered by homeowners insurance                |
-| `modeled_loss_ratio_2018_pct` | CDI Risk Zones | Ratio of insured loss (PML) to total liability by EQ zone               |
-| `fema_funding_earthquake`     | FEMA API       | Total public assistance obligated to each county (EQ-related disasters) |
+| `homeowners_coverage_pct`     | CDI (2023)     | % of housing units covered by homeowners insurance                      |
+| `modeled_loss_ratio_2018_pct` | CDI Risk Zones | Ratio of insured loss (PML) to total liability                          |
+| `fema_funding_earthquake`     | FEMA API       | Public assistance (EQ-related disasters) obligated per county           |
 
-✅ These variables enable comparative analysis of **risk vs coverage**, helping identify counties that may be **underinsured**, **highly exposed**, or both.
+✅ Enables comparisons of **coverage levels vs. risk exposure**
 
 ---
 
-## 🌋 New Variables Added in Phase 3
+## 🌋 Phase 3: Fault Exposure & Composite Scores
 
-The following variables were engineered during exploratory analysis and scoring. Only the final selected variables were retained in the exported dataset (`gdf_ca_scored_v4.parquet`).
-
-### 🧱 Seismic Exposure (from fault lines)
+### 🧱 Seismic Variables (from USGS Quaternary Faults)
 | Variable                 | Description                                                       |
 |--------------------------|-------------------------------------------------------------------|
-| `intersects_fault`       | Whether a fault line intersects the county                        |
-| `n_faults_intersecting`  | Number of named fault zones intersecting the county               |
-| `faults_list`            | List of intersecting fault names                                  |
-| `centroid_to_fault_km`   | Distance (km) from county centroid to nearest fault line          |
-| `nearest_fault_km`       | Distance (km) from county boundary to nearest fault line          |
-| `fault_length_km`        | Total length of fault segments within county boundary (km)        |
-| `mean_fault_azimuth_deg` | Average orientation angle (azimuth) of faults in county           |
-| `fault_orientation`      | Categorized fault direction (N–S, NE–SW, E–W, NW–SE, No Faults)    |
+| `intersects_fault`       | Fault line intersects county (True/False)                         |
+| `n_faults_intersecting`  | Count of intersecting named fault zones                           |
+| `faults_list`            | Names of intersecting faults                                      |
+| `centroid_to_fault_km`   | Distance from county centroid to nearest fault                    |
+| `nearest_fault_km`       | Distance from county boundary to nearest fault                    |
+| `fault_length_km`        | Total fault length within county boundary                         |
+| `mean_fault_azimuth_deg` | Mean orientation angle of fault segments                          |
+| `fault_orientation`      | Categorized direction: N–S, NE–SW, E–W, NW–SE, or No Faults        |
 
 ### 🌎 Earthquake History (from USGS API)
-| Variable            | Description                                         |
-|---------------------|-----------------------------------------------------|
-| `eq_count`          | Total number of earthquakes (Mag ≥ 4.0)             |
-| `eq_mean_mag`       | Mean earthquake magnitude per county                |
-| `eq_max_mag`        | Strongest recorded earthquake per county            |
+| Variable       | Description                                |
+|----------------|--------------------------------------------|
+| `eq_count`     | Total earthquakes (Mag ≥ 4.0) per county   |
+| `eq_mean_mag`  | Mean magnitude                             |
+| `eq_max_mag`   | Strongest recorded earthquake per county   |
 
-### ⚠️ Composite Risk & Vulnerability Scores
-
+### ⚠️ Composite Scores
 | Variable                   | Description                                                                 |
 |----------------------------|-----------------------------------------------------------------------------|
-| `seismic_risk_score`       | Composite score based on fault proximity, fault length, and earthquake history |
-| `vulnerability_score`      | Socioeconomic vulnerability based on poverty, renters, housing age, etc.   |
-| `insurance_gap_score`      | Relative gap between risk level and insurance coverage                     |
-| `underinsurance_risk_score`| Final combined score: seismic + vulnerability + insurance gap              |
+| `seismic_risk_score`       | Combines fault proximity, fault length, and earthquake activity             |
+| `vulnerability_score`      | Socioeconomic risk: poverty, renters, pre-1980 housing, age dependency, etc.|
+| `insurance_gap_score`      | Difference between modeled risk and actual insurance coverage               |
+| `underinsurance_risk_score`| Final score: seismic + social vulnerability + insurance gap                 |
 
-✅ These variables power the final **Underinsured Risk Score**, identifying counties where **earthquake hazard meets social vulnerability and insurance gaps**.
+✅ Helps identify **counties where hazard, vulnerability, and low coverage align**
+
+---
+
+## 🤖 Phase 4: Predictive Modeling & Gap Estimation
+
+Modeling was performed using **XGBoost Regression** and a **correlation-pruned feature set**, producing:
+
+| Variable | Description |
+|-----------|-------------|
+| `predicted_eq_takeup_pct` | Modeled earthquake insurance take-up rate |
+| `takeup_gap`              | Difference between predicted and actual coverage (in % points) |
+| `gap_households`          | Estimated number of uncovered households |
+| `gap_cost_usd`            | Approximate financial impact (households × $800/policy) |
+| `underinsurance_tier`     | County classification: *High Gap & High Cost*, *High Cost*, *High Gap*, *Low Impact* |
+
+✅ Enables **county-level gap quantification**, **cost estimation**, and **dashboard-ready outputs**
 
 ---
 
 ## 💾 Output Formats & Data Fidelity
 
-The project saves both intermediate and final cleaned datasets in **two formats**:
+| Format       | Purpose                                       | File                             |
+|--------------|-----------------------------------------------|----------------------------------|
+| `.parquet`   | Full-feature dataset with model predictions   | `gdf_ca_predicted_v5.parquet`    |
+| `.geojson`   | Interactive mapping (Tableau / Folium)        | `gdf_ca_predicted_v5.geojson`    |
+| `.csv`       | Tabular summary (actual vs predicted)         | `predictions_eq_takeup.csv`      |
 
-| Format       | Purpose                                       | File                             | Notes                                                                 |
-|--------------|-----------------------------------------------|----------------------------------|-----------------------------------------------------------------------|
-| `.parquet`   | ✅ Primary format for analysis and modeling    | `gdf_ca_scored_v4.parquet`       | Includes full feature set and native Python types (e.g., lists)       |
-| `.geojson`   | ✅ For mapping, GIS tools, and GitHub Pages    | `gdf_ca_scored_v4.geojson`       | Flattened structure for compatibility (e.g., `faults_list` as string) |
-
-> ⚠️ **Note:** GeoJSON is ideal for lightweight visualization but does not support nested structures. For modeling and full variable access, use the **Parquet** file.
+> ⚠️ **Note:** Use `.parquet` for full model input/output; `.geojson` for visualization
 
 ---
+
 ## 📊 Key Deliverables
 
-### ✅ Completed (Phases 1–3)
-* 📍 **Interactive maps**: Strong, average, and maximum magnitude by county (Folium)
-* 🗺️ **Choropleth maps**: Fault exposure, FEMA aid, insurance take-up, and risk scores
-* 📈 **Timelines**: Decade-by-decade earthquake frequency and intensity
-* 🧪 **EDA insights**: High-risk but underinsured regions highlighted using composite scores
-* 💾 **Final dataset exports**: `gdf_ca_scored_v4.parquet` and `.geojson` with risk metrics
+### ✅ Phases 1–3
+* 📍 Interactive maps: earthquake activity, fault lines, social vulnerability
+* 🗺️ Choropleths: FEMA funding, insurance take-up, risk scores
+* 📈 Time-series: quake frequency and intensity by decade
+* 🧪 Composite scores: `seismic_risk_score`, `vulnerability_score`, `insurance_gap_score`
+* 💾 Final exports: `gdf_ca_scored_v4.parquet`, `.geojson`
 
-### 🕒 In Progress / Coming Next (Phase 4)
-* 🤖 **Predictive modeling**: Estimate insurance take-up, loss probability, or composite risk
-* 📊 **Dashboards**: Power BI / Tableau visualizations for stakeholders (e.g. AAA Insurance)
-* 📍 **Strategic recommendations**: Pricing signals, coverage prioritization, and policy gaps
+### ✅ Phase 4
+* 🤖 Predictive modeling: XGBoost (R² = 0.865), correlation-pruned features
+* 🔍 Model interpretation: SHAP values, permutation importance, PDPs
+* 💸 Gap analysis: $64M total shortfall; 16 counties = 93% of statewide risk
+* 🗺 Residual maps: over- and underinsured counties
+* 📤 Exports: `gdf_ca_predicted_v5.parquet`, `.geojson`, `predictions_eq_takeup.csv`
+* 📊 Dashboards: Tableau / Power BI (in development)
+* 📌 Strategy insights: region-specific pricing, coverage expansion recommendations
 
 ---
 
 <details>
-<summary>📈 <strong>Key Insights from EDA (click to expand)</strong></summary>
+<summary>📈 <strong>Key EDA Insights</strong> (click to expand)</summary>
 
 🧨 **Earthquake Activity**
-- **San Bernardino**, **Humboldt**, and **Santa Clara** recorded the **highest number** of strong earthquakes (`Mag ≥ 6.0`)
-- **San Luis Obispo (7.93)** and **San Francisco (7.90)** experienced the **strongest recorded magnitudes**
-- Seismic activity is **geographically concentrated** — inland basins and coastal fault zones are most active
-- Decade-level trends reveal **spikes in activity in the early and mid-20th century**
+- Highest quake counts: **San Bernardino**, **Humboldt**, **Santa Clara**
+- Strongest magnitudes: **San Luis Obispo (7.93)**, **San Francisco (7.90)**
+- Coastal faults and inland basins show highest activity
+- Decade-level spikes in early and mid-20th century
 
-🗺️ **Geospatial Accuracy**
-- Initial boundary errors were fixed using **2023 TIGER/Line shapefiles**, enabling recovery of key events (e.g. **1906 San Francisco earthquake**)
-- Fault-line proximity and intersection metrics enabled precise **county-level hazard exposure scoring**
+🏚️ **Social Vulnerability**
+- High-risk counties often show:
+  - High **poverty**
+  - Old (**pre-1980**) housing stock
+  - High **renter** and **vacancy** rates
+  - Large **age-dependency** gaps
 
-🏚️ **Socioeconomic Vulnerability**
-- Several counties with **high seismic exposure** also score high in:
-  - **Poverty rate**
-  - **Pre-1980 housing**
-  - **Renter share** and **vacant units**
-  - **High age-dependency gaps** (more seniors, fewer children)
-
-💸 **Insurance & Coverage Gaps**
-- Earthquake **insurance take-up rates remain low** in many high-risk regions
-- Counties with high modeled loss ratios (CDI) but low policy coverage were flagged
-- FEMA funding shows **historical disaster relief patterns**, often concentrated in coastal and seismic hotspots
+💸 **Insurance Coverage Gaps**
+- Many at-risk counties show **low take-up**
+- High CDI loss ratios + low coverage = red flags
+- FEMA funding follows seismic and coastal patterns
 
 ⚠️ **Underinsurance Hotspots**
-- A composite **Underinsured Risk Score** was developed using:
-  - Seismic Risk Score
-  - Social Vulnerability Score
-  - Insurance Gap Score
-- Several counties were identified as **high-risk and underinsured**, including:
-  - **Los Angeles**
-  - **San Bernardino**
-  - **Imperial**
-  - **San Francisco**
-  - **Humboldt**
-  - **Inyo**
+- Top flagged counties: **Los Angeles**, **San Bernardino**, **Imperial**, **San Francisco**, **Humboldt**, **Inyo**
+- Composite scoring reveals regions of **high exposure and low protection**
 
-✅ These insights support **insurance pricing**, **underwriting**, and **public policy planning**.
 </details>
 
 ---
 
-## 🌐 Interactive Maps (Hosted via GitHub Pages)
+<details>
+<summary>🤖 <strong>Key Modeling Insights (Phase 4)</strong> (click to expand)</summary>
 
-Explore California's earthquake risk and insurance coverage interactively:
+📈 **Performance**
+- Final model: XGBoost Regressor  
+- R² = **0.865**, MAE = **1.69%**
 
-### 📍 Map Gallery (GitHub Pages)
-Explore all maps in one place:  
-👉 [View Interactive Map Gallery](https://annapiter.github.io/earthquake-insurance-analysis/maps/)
+🧠 **Top Features**
+- Insurance: `homeowners_coverage_pct`, `modeled_loss_ratio_2018_pct`
+- Seismic: `eq_max_mag`, `fault_length_km`, `centroid_to_fault_km`
+- Demographics: `median_income`, `poverty_pct`, `age_0_17_pct`, `migrant_pct`
+- Housing: `pre_1980_pct`, `for_sale_pct`, `seasonal_pct`
 
-### 🧨 Earthquake Activity (1769–2025)
-* [Strong Earthquakes by County (Folium)](https://annapiter.github.io/earthquake-insurance-analysis/strong_quakes_map.html)
-* [Maximum Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/max_magnitude_map.html)
-* [Average Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/avg_magnitude_map.html)
-* [All Earthquakes – Clustered Timeline View](https://annapiter.github.io/earthquake-insurance-analysis/all_earthquakes_clustered.html)
+🗺 **Residuals**
+- Underpredicted: **Mono**, **Inyo**, **San Luis Obispo**
+- Overpredicted: **Imperial**, **Glenn**, **Tehama**
+
+💸 **Gap Estimates**
+
+The total estimated underinsurance gap is **$64 million statewide**, based on:
+
+- Predicted vs. actual earthquake insurance take-up rates  
+- An assumed per-household policy cost of **$800**
+
+Counties were grouped into four underinsurance risk tiers based on % take-up gap and estimated financial cost:
+
+- **High Gap & High Cost** – **$31.19M** (9 counties)  
+  *Santa Clara, Contra Costa, Alameda, Fresno, Stanislaus, Imperial, Tulare, Merced, Tehama*
+
+- **High Cost Only** – **$28.61M** (7 counties)  
+  *Los Angeles, San Bernardino, San Joaquin, San Francisco, Sacramento, Riverside, Butte*
+
+- **High Gap Only** – **$2.07M** (9 counties)  
+- **Low Impact** – **$2.32M** (33 counties)
+
+> 🧭 Together, the **top 16 counties in Tiers 1 and 2 account for $59.8 million**, or **93% of the total statewide underinsurance burden** — a priority for **insurance outreach, pricing optimization, and disaster mitigation**.
+
+💸 **Gap Estimates**
+
+The total estimated underinsurance gap is **$59.8 million statewide**, based on:
+
+- Predicted vs. actual earthquake insurance take-up rates  
+- An average per-household policy cost of **$800**
+
+Counties were classified into two high-priority tiers:
+
+- **High Gap & High Cost** *(Tier 1)*:  
+  *Santa Clara, Contra Costa, Alameda, Fresno, Stanislaus, Imperial, Tulare, Merced, Tehama*
+
+- **High Cost Only** *(Tier 2)*:  
+  *Los Angeles, San Bernardino, San Joaquin, San Francisco, Sacramento, Riverside, Butte*
+
+> 🧭 These **16 counties account for 93%** of the statewide underinsurance burden — a clear priority for **insurance outreach, pricing optimization, and disaster risk mitigation**.
+
+
+🧪 **Interpretability**
+- SHAP and PDP show nonlinear impact of risk and vacancy features
+- Social vulnerability (poverty, migrant %, vacancy) → lower take-up
+
+</details>
+
+---
+
+## 🌐 Interactive Maps (GitHub Pages)
+
+### 📍 Gallery
+👉 [View Full Map Gallery](https://annapiter.github.io/earthquake-insurance-analysis/maps/)
+
+### 🧨 Earthquake Activity
+- [Strong Earthquakes by County](https://annapiter.github.io/earthquake-insurance-analysis/strong_quakes_map.html)
+- [Max Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/max_magnitude_map.html)
+- [Average Magnitude by County](https://annapiter.github.io/earthquake-insurance-analysis/avg_magnitude_map.html)
+- [All Quakes: Clustered View](https://annapiter.github.io/earthquake-insurance-analysis/all_earthquakes_clustered.html)
 
 ### 🗺️ Fault Line Exposure
-* [Counties Intersecting Fault Lines](https://annapiter.github.io/earthquake-insurance-analysis/map_fault_intersection.html)
-* [Total Fault Line Length by County](https://annapiter.github.io/earthquake-insurance-analysis/map_fault_length_by_county.html)
+- [Counties Intersecting Faults](https://annapiter.github.io/earthquake-insurance-analysis/map_fault_intersection.html)
+- [Fault Line Length by County](https://annapiter.github.io/earthquake-insurance-analysis/map_fault_length_by_county.html)
 
-### 💡 Social Vulnerability & Insurance Coverage
-* [Seasonal Vacancy Rates (ACS)](https://annapiter.github.io/earthquake-insurance-analysis/map_seasonal_vacancy.html)
-* [EQ Take-up Rate vs Seasonal Housing](https://annapiter.github.io/earthquake-insurance-analysis/map_seasonal_plus_eq_takeup.html)
+### 💡 Social Vulnerability & Insurance
+- [Seasonal Vacancy Rates (ACS)](https://annapiter.github.io/earthquake-insurance-analysis/map_seasonal_vacancy.html)
+- [EQ Take-up vs. Seasonal Housing](https://annapiter.github.io/earthquake-insurance-analysis/map_seasonal_plus_eq_takeup.html)
 
-### ⚠️ Underinsured Risk Hotspots
-* [Underinsured Risk Score in Fault-Exposed Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_fault_zone.html)
-* [Underinsured Risk Score in High-Quake Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_quake_zone.html)
-
-These interactive maps combine **earthquake history**, **fault line geometry**, **housing and insurance data**, and **derived risk scores** to highlight vulnerable and underinsured counties across California.
+### ⚠️ Underinsurance Hotspots
+- [Risk Score – Fault Zone Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_fault_zone.html)
+- [Risk Score – High Quake Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_quake_zone.html)
+- [Top 16 Underinsured Counties](https://annapiter.github.io/earthquake-insurance-analysis/map_underinsured_top16.html)
+- [Model Residuals](https://annapiter.github.io/earthquake-insurance-analysis/map_residuals_folium.html)
 
 ---
 
 ## ✍️ Author
 
-**Anna Piterskaya**
-Aspiring Data Scientist | Based in California
-🎯 Career Goal: Data Science role in the Insurance industry — especially at **AAA Insurance**
+**Anna Piterskaya**  
+Data Scientist | Based in California  
+🎯 Career Goal: Data Science role in **PropTech**, Real Estate Analytics, or Risk Modeling — with interest in companies like **CoreLogic**, **Hippo**, **Zillow**, **AAA Insurance**, or **JMA Ventures**  
 📧 GitHub: [annapiter](https://github.com/annapiter)
+
+🧠 This project was built independently with support from **AI tools** (including **ChatGPT**) for code review, markdown editing, and **iterative ideation**.
 
 ---
 
 ## 🚀 Next Steps
 
-> ✅ Completed: Exploratory analysis of fault exposure, insurance coverage, and social vulnerability  
-> ✅ Engineered composite scores: `seismic_risk_score`, `vulnerability_score`, `insurance_gap_score`, and `underinsurance_risk_score`  
-> 🧠 Next: Develop predictive models to estimate earthquake insurance take-up, risk tiers, and expected loss  
-> 📊 Visualize results in dashboards to support underwriting and strategic planning
+> ✅ Completed: Fault analysis, demographic scoring, insurance coverage modeling  
+> ✅ Engineered composite scores: `seismic_risk_score`, `vulnerability_score`, `underinsurance_risk_score`  
+> ✅ Trained predictive models, explained predictions, and estimated cost of underinsurance  
+> 📊 **Next**: Build interactive Tableau dashboards and a presentation-ready PDF for portfolio/stakeholder use
