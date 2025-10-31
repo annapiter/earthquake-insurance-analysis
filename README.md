@@ -39,29 +39,33 @@ It is especially relevant for organizations working in:
 
 ```
 earthquake_insurance_project/
-├── data/ # Raw input files (shapefiles, CSVs, exports)
-├── notebooks/ # Jupyter notebooks by phase
-│ ├── 01_data_collection.ipynb
-│ ├── 02a_demographics_and_housing_data.ipynb
-│ ├── 02b_insurance_variables.ipynb
-│ ├── 02c_data_cleaning_and_preparation.ipynb
-│ ├── 03a_fault_lines_integration.ipynb
-│ ├── 03b_eda_and_underinsured_score.ipynb
-│ ├── 04_predictive_modeling.ipynb
-│ └── 04a_model_experiments.ipynb
-├── output/ # Processed data and summaries
-│ ├── gdf_ca_cleaned.parquet
-│ ├── gdf_ca_cleaned.geojson
-│ ├── gdf_ca_scored_v4.parquet
-│ ├── gdf_ca_scored_v4.geojson
-│ ├── gdf_ca_predicted_v5.parquet
-│ ├── gdf_ca_predicted_v5.geojson
-│ └── predictions_eq_takeup.csv
-├── maps/ # 📍 Folium interactive maps (GitHub Pages)
-├── scripts/ # Helper Python scripts (optional)
-├── dashboards/ # Tableau / Power BI dashboards (WIP)
-├── README.md
-└── requirements.txt
+├── data/                          # Raw input files (shapefiles, CSVs, exports)
+├── notebooks/                     # Jupyter notebooks by phase
+│   ├── 01_data_collection.ipynb
+│   ├── 02a_demographics_and_housing_data.ipynb
+│   ├── 02b_insurance_variables.ipynb
+│   ├── 02c_data_cleaning_and_preparation.ipynb
+│   ├── 03a_fault_lines_integration.ipynb
+│   ├── 03b_eda_and_underinsured_score.ipynb       # Clean version (no outputs)
+│   ├── 03b1_preview.ipynb                          # Parts 1–2: Overview & Thematic EDA
+│   ├── 03b2_preview.ipynb                          # Part 3a: Seismic Risk – Fault Exposure
+│   ├── 03b3_preview.ipynb                          # Part 3b–4: Earthquake History & Scoring
+│   ├── 04_predictive_modeling.ipynb
+│   └── 04a_model_experiments.ipynb
+├── output/                       # Processed data and summaries
+│   ├── gdf_ca_cleaned.parquet
+│   ├── gdf_ca_cleaned.geojson
+│   ├── gdf_ca_scored_v4.parquet
+│   ├── gdf_ca_scored_v4.geojson
+│   ├── gdf_ca_predicted_v5.parquet
+│   ├── gdf_ca_predicted_v5.geojson
+│   └── predictions_eq_takeup.csv
+├── maps/                         # 📍 Folium interactive maps (GitHub Pages)
+├── scripts/                      # Helper Python scripts (optional)
+├── dashboards/                   # Tableau / Power BI dashboards (WIP)
+├── README.md                     # 📘 Project overview and insights
+└── requirements.txt              # Python dependencies
+
 ```
 
 </details>
