@@ -316,9 +316,9 @@ Counties were classified into two high-priority tiers:
 **Anna Piterskaya**  
 Data Scientist | Based in California  
 🎯 Career Goal: Data Science role in **PropTech**, Real Estate Analytics, or Risk Modeling — with interest in companies like **CoreLogic**, **Hippo**, **Zillow**, **AAA Insurance**, or **JMA Ventures**  
-📧 GitHub: [annapiter](https://github.com/annapiter)
+GitHub: [annapiter](https://github.com/annapiter)
 
-🧠 This project was built independently with support from **AI tools** (including **ChatGPT**) for code review, markdown editing, and **iterative ideation**.
+This project was built independently with support from **AI tools** (including **ChatGPT**) for code review, markdown editing, and **iterative ideation**.
 
 ---
 

@@ -1,8 +1,23 @@
+# Core Data & Analysis
 pandas
+numpy
+scipy
+
+# Geospatial
 geopandas
+shapely
+folium
+branca
+
+# Visualization
 matplotlib
 seaborn
-folium
-shapely
-jupyter
+plotly
+
+# Modeling & Machine Learning
 scikit-learn
+xgboost
+shap
+
+# Notebook & Utilities
+jupyter
