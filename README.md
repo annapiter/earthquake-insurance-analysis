@@ -8,16 +8,12 @@ Relevant domains include:
 - **Insurance & catastrophe modeling** (AAA, CoreLogic, Hippo, Swiss Re)  
 - **Public-sector resilience & emergency management**  
 
----
-
 ## 🔍 Key Questions
 - Which regions face the highest seismic exposure?  
 - Where are strong earthquakes concentrated historically?  
 - How does seismic activity intersect with demographics and housing vulnerability?  
 - Where are earthquake insurance coverage gaps most pronounced?  
 - Can we predict take-up rates and quantify underinsurance exposure?  
-
----
 
 ## 🧰 Tools & Technologies
 * Python (pandas, geopandas, scikit-learn, XGBoost, seaborn, matplotlib, folium)  
@@ -28,10 +24,9 @@ Relevant domains include:
 * U.S. Census TIGER/Line Shapefiles  
 * FEMA API, NAIC, CDI data  
 
----
-
 ## 📂 Project Structure
 
+```
 earthquake_insurance_analysis/
 ├── data/ # Raw input files
 ├── notebooks/ # Jupyter notebooks by phase
@@ -40,21 +35,16 @@ earthquake_insurance_analysis/
 ├── dashboards/ # Tableau dashboards
 ├── README.md # Project overview
 └── requirements.txt # Dependencies
-
----
+```
 
 ## 🌍 Geospatial Accuracy
 Boundary alignment was standardized using **2023 TIGER/Line county shapefiles**, enabling accurate joins and correct historical earthquake recovery — including the 1906 San Francisco event.
-
----
 
 ## 🔍 Data Scope
 * **Magnitude ≥ 4.0** earthquakes  
 * **5,109 events** from **1769–2025**  
 * Processed via the **USGS Earthquake API**  
 * Enriched with demographic, housing, and insurance variables  
-
----
 
 ## 🧱 Seismic Exposure Variables
 ### From USGS Quaternary Faults:
@@ -71,8 +61,6 @@ Boundary alignment was standardized using **2023 TIGER/Line county shapefiles**,
 - Mean magnitude  
 - Decade trends  
 
----
-
 ## 🧩 Composite Risk & Vulnerability Scores
 Three composite indices were engineered:
 
@@ -84,8 +72,6 @@ Three composite indices were engineered:
 | **Underinsurance Risk Score** | Final combined index |
 
 These scores highlight counties where hazard, vulnerability, and low coverage converge.
-
----
 
 ## 🤖 Predictive Modeling
 A correlation-pruned feature set was used with **XGBoost Regression** to model earthquake insurance take-up rates.
@@ -99,7 +85,6 @@ A correlation-pruned feature set was used with **XGBoost Regression** to model e
 | `gap_cost_usd` | Estimated financial exposure |
 | `underinsurance_tier` | Classification of counties |
 
----
 
 ## 💸 Underinsurance Findings
 - **Total statewide underinsurance gap:** **~$64 million**  
@@ -111,7 +96,6 @@ A correlation-pruned feature set was used with **XGBoost Regression** to model e
 
 These counties represent the greatest opportunity for **insurance outreach, mitigation funding, and pricing strategy optimization.**
 
----
 
 ## 💾 Outputs
 | Format       | Purpose                          |
@@ -125,7 +109,6 @@ Key files include:
 - `gdf_ca_predicted_v5.parquet`  
 - `predictions_eq_takeup.csv`  
 
----
 
 ## 🗺️ Interactive Maps (GitHub Pages)
 Explore interactive Folium maps here:
@@ -139,7 +122,6 @@ Includes:
 - Underinsurance tiers  
 - Residual maps  
 
----
 
 ## 📊 Key Deliverables
 - Comprehensive county-level risk, vulnerability, and insurance gap dataset  
@@ -149,7 +131,6 @@ Includes:
 - Tableau dashboards (completed)  
 - Documentation and narrative insights  
 
----
 
 ## ✍️ Author
 **Anna Piterskaya** — Data Scientist  
