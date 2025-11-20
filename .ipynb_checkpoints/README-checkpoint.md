@@ -87,7 +87,7 @@ A correlation-pruned feature set was used with **XGBoost Regression** to model e
 
 
 ## 💸 Underinsurance Findings
-- **Total statewide underinsurance gap:** **~$64 million**  
+- **Total statewide underinsurance gap: $60M+**  
 - **16 counties** account for **93%** of the financial exposure  
 - High-cost counties include:  
   *Los Angeles, San Bernardino, San Francisco, Sacramento, Riverside, Butte*  
