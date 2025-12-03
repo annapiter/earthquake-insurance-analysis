@@ -8,12 +8,33 @@ Relevant domains include:
 - **Insurance & catastrophe modeling** (AAA, CoreLogic, Hippo, Swiss Re)  
 - **Public-sector resilience & emergency management**  
 
+
+## 🎯 Key Deliverables
+- County-level earthquake **underinsurance tiers**
+- Financial exposure estimates (USD)
+- XGBoost predictive model (R² ≈ 0.53)
+- Composite seismic + vulnerability + insurance gap scores  
+- Interactive Folium geospatial maps (GitHub Pages)  
+- Interactive Tableau dashboard  
+- Final presentation (PDF)
+
+### 📑 **Final Presentation (PDF)**
+👉 [Earthquake Insurance Risk Analysis – Presentation](presentation/Piterskaya_Anna_Earthquake_Insurance_Risk_Analysis_Presentation.pdf)
+
+### 📊 **Tableau Dashboard**
+👉 [California Earthquake Underinsurance 2023 Dashboard](https://public.tableau.com/app/profile/annapiter/viz/CaliforniaEarthquakeUnderinsurance2023ModelAnalysis/CaliforniaEarthquakeUnderinsurance2023)
+
+### 🗺️ **Interactive Maps (GitHub Pages)**
+👉 https://annapiter.github.io/earthquake-insurance-analysis/maps/
+
+
 ## 🔍 Key Questions
 - Which regions face the highest seismic exposure?  
-- Where are strong earthquakes concentrated historically?  
+- Where are strong earthquakes historically concentrated?  
 - How does seismic activity intersect with demographics and housing vulnerability?  
 - Where are earthquake insurance coverage gaps most pronounced?  
 - Can we predict take-up rates and quantify underinsurance exposure?  
+
 
 ## 🧰 Tools & Technologies
 * Python (pandas, geopandas, scikit-learn, XGBoost, seaborn, matplotlib, folium)  
@@ -24,6 +45,7 @@ Relevant domains include:
 * U.S. Census TIGER/Line Shapefiles  
 * FEMA API, NAIC, CDI data  
 
+
 ## 📂 Project Structure
 
 ```
@@ -32,13 +54,16 @@ earthquake_insurance_analysis/
 ├── notebooks/ # Jupyter notebooks by phase
 ├── output/ # Processed datasets & model predictions
 ├── maps/ # Folium interactive maps (GitHub Pages)
-├── dashboards/ # Tableau dashboards
-├── README.md # Project overview
-└── requirements.txt # Dependencies
+├── dashboards/ # Tableau dashboard link (README only)
+├── presentation/ # Final PDF presentation
+├── README.md
+└── requirements.txt
 ```
+
 
 ## 🌍 Geospatial Accuracy
 Boundary alignment was standardized using **2023 TIGER/Line county shapefiles**, enabling accurate joins and correct historical earthquake recovery — including the 1906 San Francisco event.
+
 
 ## 🔍 Data Scope
 * **Magnitude ≥ 4.0** earthquakes  
@@ -46,7 +71,9 @@ Boundary alignment was standardized using **2023 TIGER/Line county shapefiles**,
 * Processed via the **USGS Earthquake API**  
 * Enriched with demographic, housing, and insurance variables  
 
+
 ## 🧱 Seismic Exposure Variables
+
 ### From USGS Quaternary Faults:
 - Fault intersections  
 - Count of fault zones  
@@ -61,8 +88,8 @@ Boundary alignment was standardized using **2023 TIGER/Line county shapefiles**,
 - Mean magnitude  
 - Decade trends  
 
+
 ## 🧩 Composite Risk & Vulnerability Scores
-Three composite indices were engineered:
 
 | Score | Purpose |
 |--------|---------|
@@ -73,7 +100,9 @@ Three composite indices were engineered:
 
 These scores highlight counties where hazard, vulnerability, and low coverage converge.
 
+
 ## 🤖 Predictive Modeling
+
 A correlation-pruned feature set was used with **XGBoost Regression** to model earthquake insurance take-up rates.
 
 ### Model Outputs
@@ -87,6 +116,7 @@ A correlation-pruned feature set was used with **XGBoost Regression** to model e
 
 
 ## 💸 Underinsurance Findings
+
 - **Total statewide underinsurance gap: $60M+**  
 - **16 counties** account for **93%** of the financial exposure  
 - High-cost counties include:  
@@ -98,6 +128,7 @@ These counties represent the greatest opportunity for **insurance outreach, miti
 
 
 ## 💾 Outputs
+
 | Format       | Purpose                          |
 |--------------|----------------------------------|
 | `.parquet`   | Full ML-ready dataset            |
@@ -108,28 +139,6 @@ Key files include:
 - `gdf_ca_scored_v4.parquet`  
 - `gdf_ca_predicted_v5.parquet`  
 - `predictions_eq_takeup.csv`  
-
-
-## 🗺️ Interactive Maps (GitHub Pages)
-Explore interactive Folium maps here:
-
-👉 **https://annapiter.github.io/earthquake-insurance-analysis/maps/**
-
-Includes:
-- Earthquake clustering and intensity maps  
-- Fault line exposure  
-- Social vulnerability layers  
-- Underinsurance tiers  
-- Residual maps  
-
-
-## 📊 Key Deliverables
-- Comprehensive county-level risk, vulnerability, and insurance gap dataset  
-- Feature-engineered ML-ready dataset with predictions  
-- SHAP explainability and model interpretation  
-- Interactive geospatial maps (Folium + GitHub Pages)  
-- Tableau dashboards (completed)  
-- Documentation and narrative insights  
 
 
 ## ✍️ Author
